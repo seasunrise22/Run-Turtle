@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
+        />
+
+        <EditText
+            android:id="@+id/newitem"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="exercise_name" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_blue2"
+            android:textColor="#29B3B5"
+            android:onClick="mOnClick"
+            android:text="운동 추가" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="0px"
+            android:background="@drawable/button_blue4"
+            android:textColor="#90D899"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:onClick="mOnClick"
+            android:text="하루끝!" />
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whi"
+        android:max="100"
+        android:progress="0" />
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진행상황 "
+        />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:choiceMode="multipleChoice"
+        >
+
+    </ListView>
+
+
+
+
+</LinearLayout>

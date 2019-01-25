@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- CoordinatorLayout으로 View들을 감싸고 있으면 서로 상호작용하기 좋은 듯 -->
+    <!-- CoordinatorLayout은 액션바 영역을 포함한 전체 화면의 위치를 잡아주는 역할을 한다 -->
+    <!-- CoordinatorLayout안에 AppBarLayout과 함께 다른 레이아웃을 넣으면, 그 둘 간의 간격이나 위치가 자동으로 결정된다 -->
+    <!-- https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout.html -->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- AppBarLayout은 액션바를 가리킨다(맨 위에 제목들어가는 그 부분인 듯) -->
+        <!-- 액션바 위에 기본으로 뜨는 게 타이틀바 인가보다. 타이틀바가 조금 더 정적인 느낌? -->
+        <!-- AppBarLayout 안에는 툴바가 들어갈 수 있으며, 탭을 사용하는 경우에는 탭의 버튼들이 들어갈 수 있는 TabLayout을 추가할 수 있다 -->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" >
+
+            <!-- Toolbar layout for actionbar -->
+            <!-- 위에 AppBarLayout은 말 그대로 그냥 Layout일 뿐이고, 그 안에 들어가는 본격적인 게 바로 Toolbar 인 듯 -->
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Platform.ThemeOverlay.AppCompat.Dark"
+                android:background="@color/turtlecolor"
+                android:elevation="1dp"
+                android:id="@+id/toolbar" >
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textColor="#FFFFFF"
+                    android:text="달려라 거북이" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <!-- Tab buttons -->
+            <!-- 이 또한 레이아웃일 뿐. 이 안에 뭔갈 넣어야 하겠지 -->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextColor="@color/tgray"
+                app:tabSelectedTextColor="@color/turtlecolor"
+                android:elevation="1dp"
+                android:background="@android:color/background_light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- 자바 소스코드에서 이 안에 프래그먼트들을 차례로 넣을 수 있도록 한다. -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/container" >
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffffff">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="목적지 설정"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:background="@color/turtlecolor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <!-- 타이틀바 / End -->
+
+    <!-- 주소 검색 부분 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/input_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="주소를 입력하세요."
+            android:textSize="16dp" />
+
+        <!-- 주소 검색 버튼과 검색 기록 버튼 둘 레이아웃 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_retrieveAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/turtlecolor"
+                android:background="@drawable/button_white"
+                android:layout_alignParentRight="true"
+                android:text="검색 기록"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_showAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/btn_retrieveAddress"
+                android:text="주소 검색"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/whi"
+                android:background="@drawable/button_blue5"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <!-- 주소 검색 부분 / End -->
+
+    <!-- 주소 검색 결과 뜨는 부분 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/result_Address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </ScrollView>
+    <!-- 주소 검색 결과 뜨는 부분 / End -->
+
+    <!-- 목적지 설정 완료 버튼과 안내 텍스트 -->
+    <Button
+        android:id="@+id/btn_finishAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="목적지 설정 완료"
+        android:layout_margin="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/whi"
+        android:background="@drawable/button_pink"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="목적지로부터 200m, 100m, 50m 남았을 때 알림"
+        android:background="@color/turtlecolor"
+        android:textSize="14dp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"/>
+
+    <!-- 목적지 설정 완료 버튼과 안내 텍스트 / End -->
+
+</LinearLayout>

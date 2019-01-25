@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- <<< 2017년 6월 >>> 부분 레이아웃 -->
+    <!-- 달력 위 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff">
+
+        <Button
+            android:id="@+id/monthPrevious"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow"
+            android:adjustViewBounds="true"/>
+
+        <!-- 년 월 표시 -->
+        <TextView
+            android:id="@+id/monthText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="MonthView"
+            android:textSize="24dp"
+            android:textColor="@color/turtlecolor"
+            />
+
+        <Button
+            android:id="@+id/monthNext"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right_arrow"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <!-- 요일 넣을 레이아웃 -->
+    <LinearLayout
+
+        android:background="@drawable/textline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:gravity="center_horizontal"
+            android:text="일" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="월" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="화" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="수" />
+
+        <TextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="목" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="금" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#0100FF"
+            android:gravity="center_horizontal"
+            android:text="토" />
+
+    </LinearLayout>
+
+    <!-- 달력 GirdView -->
+    <!-- numColumns : GridView의 행에 나열할 컬럼의 개수(1~n개)를 지정한다 -->
+    <!-- horizontalSpacing : 그리드뷰 셀 간의 간격 -->
+    <!-- android:stretchMode="columnWidth" : 위젯이 격자 내부를 가득채우게 함 -->
+    <GridView
+        android:id="@+id/monthView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="#ffbbbbbb"
+        android:horizontalSpacing="1dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+    <!-- 달력 아래 체크리스트 버튼이랑 체크리스트 내역 보여주는 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/whi"
+        android:orientation="vertical">
+
+        <!-- 체크리스트 추가 버튼 -->
+        <Button
+            android:id="@+id/btnChkList"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pink"
+            android:textColor="@color/whi"
+            android:textSize="24dp"
+            android:text="체크리스트 추가" />
+
+        <!-- 날짜 표시용 -->
+        <TextView
+            android:text="CheckListView"
+            android:textSize="15dp"
+            android:id="@+id/checkList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          />
+
+        <!-- 한줄평이랑 퍼센트 표시용 -->
+        <TextView
+            android:text="한줄평, 퍼센트"
+            android:textSize="30dp"
+            android:id="@+id/checkListMemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

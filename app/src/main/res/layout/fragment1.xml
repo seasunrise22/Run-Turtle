@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- madeBy 나타낼 레이아웃 -->
+    <!-- background="#B3FFFFFF" 에서 B3는 투명도 70%라는 이야기 -->
+    <LinearLayout
+        android:id="@+id/layout_madeBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#B3FFFFFF">
+
+        <!-- madeBy 나타낼 TextView -->
+        <TextView
+            android:id="@+id/display_madeBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="madeBy 부스터 단 거북이"
+            android:textSize="15dp"
+            android:textColor="#303F9F"/>
+
+    </LinearLayout>
+    <!-- madeBy 나타낼 레이아웃 끝 -->
+
+    <!-- 지도 하단 버튼 넣을 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@id/layout_madeBy"
+        android:layout_centerHorizontal="true">
+
+        <!-- 지도 하단에 넣을 버튼들 -->
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textSize="20dp"
+            android:textColor="#8BB399"
+
+            android:layout_marginRight="2dp"
+            android:text="시작" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue2"
+            android:layout_marginRight="2dp"
+            android:textSize="20dp"
+            android:textColor="#29B3B5"
+            android:text="정지" />
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/button_blue3"
+            android:textColor="#46B3FF"
+            android:text="초기화" />
+
+        <Button
+            android:id="@+id/btn_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/button_blue4"
+            android:textColor="#90D899"
+            android:text="목적지 설정" />
+
+    </LinearLayout>
+    <!-- 지도 하단 버튼 넣을 레이아웃 끝 -->
+
+    <!-- 속도 나타낼 레이아웃 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3FFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/display_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="최대속도 : \n현재속도 : "
+            android:textSize="20dp"
+            android:textColor="#BDBDBD"/>
+
+    </RelativeLayout>
+
+    <!-- 이동거리, 경과시간 나타낼 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#B3FFFFFF"
+        android:layout_above="@id/layout_btn"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <!-- 경과시간 -->
+        <TextView
+            android:id="@+id/display_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="경과시간 : "
+            android:textSize="20dp"
+            android:textColor="#BDBDBD"/>
+
+        <!-- 이동거리 -->
+        <TextView
+            android:id="@+id/display_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_above="@id/display_time"
+            android:text="이동거리 : "
+            android:textSize="20dp"
+            android:textColor="#BDBDBD"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
