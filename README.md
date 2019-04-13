@@ -21,11 +21,11 @@
 - DB : MySQL, phpMyAdmin
 
 ## Screenshots
-![gps_01](https://user-images.githubusercontent.com/45503931/56084353-0f246380-5e6d-11e9-842e-a05b35564b97.png)
-![gps_02](https://user-images.githubusercontent.com/45503931/56084354-0f246380-5e6d-11e9-9c65-d90eb63b2234.png)
-![sche_01](https://user-images.githubusercontent.com/45503931/56084355-0fbcfa00-5e6d-11e9-9858-5816767baf64.png)
-![check_01](https://user-images.githubusercontent.com/45503931/56084356-0fbcfa00-5e6d-11e9-8c12-5e2794b54865.png)
-![info_01](https://user-images.githubusercontent.com/45503931/56084357-0fbcfa00-5e6d-11e9-980b-abdb07390eb6.png)
-![info_02](https://user-images.githubusercontent.com/45503931/56084358-0fbcfa00-5e6d-11e9-9454-fdd91bacc363.png)
-![set_01](https://user-images.githubusercontent.com/45503931/56084359-10559080-5e6d-11e9-9013-b404f3750a01.png)
-![set_02](https://user-images.githubusercontent.com/45503931/56084360-10559080-5e6d-11e9-916c-5ba744abbb2d.png)
+![resize_check_01](https://user-images.githubusercontent.com/45503931/56084469-5f4ff580-5e6e-11e9-956d-64aaec59e34d.png)
+![resize_gps_01](https://user-images.githubusercontent.com/45503931/56084470-5fe88c00-5e6e-11e9-82a9-72c0155519ac.png)
+![resize_gps_02](https://user-images.githubusercontent.com/45503931/56084471-5fe88c00-5e6e-11e9-9c84-e86e15abcca6.png)
+![resize_info_01](https://user-images.githubusercontent.com/45503931/56084472-5fe88c00-5e6e-11e9-94e0-a9474d6d407c.png)
+![resize_info_02](https://user-images.githubusercontent.com/45503931/56084473-60812280-5e6e-11e9-98ee-e8b0a4854db3.png)
+![resize_sche_01](https://user-images.githubusercontent.com/45503931/56084474-60812280-5e6e-11e9-93a1-c879df3d7897.png)
+![resize_set_01](https://user-images.githubusercontent.com/45503931/56084475-60812280-5e6e-11e9-8245-3c1dd48e8623.png)
+![resize_set_02](https://user-images.githubusercontent.com/45503931/56084477-60812280-5e6e-11e9-9746-6dcf75693b80.png)
