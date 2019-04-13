@@ -15,8 +15,7 @@
 저는 기능1과 프로그램 통합을 담당했습니다.
 
 ## 개발 환경
-- IDE
- - Android Studio
+- IDE : Android Studio
 - Language
 Java, php
 Server
