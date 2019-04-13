@@ -21,15 +21,12 @@
 - DB : MySQL, phpMyAdmin
 
 ## Screenshots
-{::nomarkdown}
+<div>
+![gps_01](https://user-images.githubusercontent.com/45503931/56084353-0f246380-5e6d-11e9-842e-a05b35564b97.png)
+![gps_02](https://user-images.githubusercontent.com/45503931/56084354-0f246380-5e6d-11e9-9c65-d90eb63b2234.png)
+</div>
+ 
 
-<!-- HTML CODE-->
-<tr>
-  <td>![gps_01](https://user-images.githubusercontent.com/45503931/56084353-0f246380-5e6d-11e9-842e-a05b35564b97.png)</td>
-  <td>![gps_02](https://user-images.githubusercontent.com/45503931/56084354-0f246380-5e6d-11e9-9c65-d90eb63b2234.png)</td>
- </tr>
-
-{:/}
 
 
 
