@@ -20,7 +20,7 @@
 - Server : Apache Tomcat 
 - DB : MySQL, phpMyAdmin
 
-## Preview Image
+## Screenshots
 !(Portfolio/img/work_android01.png)
 
 
