@@ -21,17 +21,11 @@
 - DB : MySQL, phpMyAdmin
 
 ## Screenshots
-![work_android01](https://user-images.githubusercontent.com/45503931/56084154-fcf4f600-5e69-11e9-9b54-3a264c6c866a.png)
-![work_android02](https://user-images.githubusercontent.com/45503931/56084159-067e5e00-5e6a-11e9-9066-6624fca94d8e.jpg)
-![work_android03](https://user-images.githubusercontent.com/45503931/56084160-067e5e00-5e6a-11e9-9d93-d68956523272.jpg)
-![work_android04](https://user-images.githubusercontent.com/45503931/56084161-067e5e00-5e6a-11e9-8e1f-d16b1e84477b.jpg)
-![work_android05](https://user-images.githubusercontent.com/45503931/56084162-0716f480-5e6a-11e9-8b26-8be936cc9a44.png)
-![work_android06](https://user-images.githubusercontent.com/45503931/56084163-0716f480-5e6a-11e9-82ce-e9f40ec807b1.jpg)
-![work_android07](https://user-images.githubusercontent.com/45503931/56084164-0716f480-5e6a-11e9-9fc4-75b9ab563099.jpg)
-
-
-
-
-
-
-
+![gps_01](https://user-images.githubusercontent.com/45503931/56084353-0f246380-5e6d-11e9-842e-a05b35564b97.png)
+![gps_02](https://user-images.githubusercontent.com/45503931/56084354-0f246380-5e6d-11e9-9c65-d90eb63b2234.png)
+![sche_01](https://user-images.githubusercontent.com/45503931/56084355-0fbcfa00-5e6d-11e9-9858-5816767baf64.png)
+![check_01](https://user-images.githubusercontent.com/45503931/56084356-0fbcfa00-5e6d-11e9-8c12-5e2794b54865.png)
+![info_01](https://user-images.githubusercontent.com/45503931/56084357-0fbcfa00-5e6d-11e9-980b-abdb07390eb6.png)
+![info_02](https://user-images.githubusercontent.com/45503931/56084358-0fbcfa00-5e6d-11e9-9454-fdd91bacc363.png)
+![set_01](https://user-images.githubusercontent.com/45503931/56084359-10559080-5e6d-11e9-9013-b404f3750a01.png)
+![set_02](https://user-images.githubusercontent.com/45503931/56084360-10559080-5e6d-11e9-916c-5ba744abbb2d.png)
