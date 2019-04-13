@@ -21,7 +21,7 @@
 - DB : MySQL, phpMyAdmin
 
 ## Screenshots
-![resize_check_01](https://user-images.githubusercontent.com/45503931/56084469-5f4ff580-5e6e-11e9-956d-64aaec59e34d.png)
+![resize_check_01](https://user-images.githubusercontent.com/45503931/56084497-a211cd80-5e6e-11e9-8f05-8a712bdcf8ae.png)
 ![resize_gps_01](https://user-images.githubusercontent.com/45503931/56084470-5fe88c00-5e6e-11e9-82a9-72c0155519ac.png)
 ![resize_gps_02](https://user-images.githubusercontent.com/45503931/56084471-5fe88c00-5e6e-11e9-9c84-e86e15abcca6.png)
 ![resize_info_01](https://user-images.githubusercontent.com/45503931/56084472-5fe88c00-5e6e-11e9-94e0-a9474d6d407c.png)
