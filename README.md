@@ -14,11 +14,10 @@
 
 저는 기능1과 프로그램 통합을 담당했습니다.
 
-## Summary
-
-IDE
-Android Studio
-Language
+## 개발 환경
+- IDE
+ - Android Studio
+- Language
 Java, php
 Server
 Apache Tomcat 
