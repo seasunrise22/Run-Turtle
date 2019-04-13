@@ -21,6 +21,7 @@
 - DB : MySQL, phpMyAdmin
 
 ## Preview Image
+!(Portfolio/img/work_android01.png)
 
 
 
