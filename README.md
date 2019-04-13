@@ -21,7 +21,14 @@
 - DB : MySQL, phpMyAdmin
 
 ## Screenshots
-!(Portfolio/img/work_android01.png)
+![work_android01](https://user-images.githubusercontent.com/45503931/56084154-fcf4f600-5e69-11e9-9b54-3a264c6c866a.png)
+![work_android02](https://user-images.githubusercontent.com/45503931/56084159-067e5e00-5e6a-11e9-9066-6624fca94d8e.jpg)
+![work_android03](https://user-images.githubusercontent.com/45503931/56084160-067e5e00-5e6a-11e9-9d93-d68956523272.jpg)
+![work_android04](https://user-images.githubusercontent.com/45503931/56084161-067e5e00-5e6a-11e9-8e1f-d16b1e84477b.jpg)
+![work_android05](https://user-images.githubusercontent.com/45503931/56084162-0716f480-5e6a-11e9-8b26-8be936cc9a44.png)
+![work_android06](https://user-images.githubusercontent.com/45503931/56084163-0716f480-5e6a-11e9-82ce-e9f40ec807b1.jpg)
+![work_android07](https://user-images.githubusercontent.com/45503931/56084164-0716f480-5e6a-11e9-9fc4-75b9ab563099.jpg)
+
 
 
 
