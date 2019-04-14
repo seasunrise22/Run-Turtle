@@ -25,7 +25,7 @@
 - Server : Apache Tomcat 
 - DB : MySQL, phpMyAdmin
 
-## Screenshot
+## Screenshots
 ***기능1***
 
 ![resize_gps_01](https://user-images.githubusercontent.com/45503931/56084470-5fe88c00-5e6e-11e9-82a9-72c0155519ac.png)
