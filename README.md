@@ -122,9 +122,9 @@ public void onResponse(String response) {
         }
         
 AddressRequest addressRequest = new AddressRequest(searchStr, responseListener);
-</code></pre>
+```
 
-<code><pre>
+```JAVA
 public class AddressRequest extends StringRequest {
     private static final String ADDRESS_REQUEST_URL = "http://exercisemanagementapp.iptime.org/address.php";
     private Map<String, String> params;    
