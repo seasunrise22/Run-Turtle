@@ -108,6 +108,7 @@ private void searchLocation(String searchStr) {
 </code></pre>
   
 ***php를 매개로 MySQL과 JSON 형식으로 통신***
+
 <code><pre>
 Response.Listener<String> responseListener = new Response.Listener<String>() {
 
