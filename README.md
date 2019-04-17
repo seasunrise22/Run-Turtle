@@ -66,6 +66,43 @@ private class GPSListener implements LocationListener {
       ...
 </code></pre>
 
+***속도, 이동거리, 이동시간 구하기***
+<pre><code>
+// 현재속도, 최대속도 구하기
+if(location != null) {
+  currentSpeed = location.getSpeed();
+  if (currentSpeed > maxSpeed) {
+      maxSpeed = currentSpeed;
+  }
+  String strMaxSpeed = String.format("%.2f", maxSpeed);
+  String strMinSpeed = String.format("%.2f", currentSpeed);
+  speedView.setText("최대속도 : " + strMaxSpeed + " m/s" + "\n현재속도 : " + strMinSpeed + " m/s");
+}
+
+// 누적 이동거리 구하기
+if(lastLocation == null) {
+   lastLocation = location; // 최근 위치를 lastLocation 변수에 저장
+  } else {
+    // distanceTo = Returns the approximate distance in meters between this location and the given location.
+    distance = distance + lastLocation.distanceTo(location); 
+    lastLocation = location; // 새롭게 갱신 된 최근 위치를 다시 lastLocation 변수에 저장
+    String strDistance = String.format("%.2f", distance); // 소수점 둘째자리까지만 표시하도록
+
+    distanceView.setText("이동거리 : " + strDistance + " m");
+  }
+
+// 이동한 시간 구하기
+if(axisTime == 0) {
+    currentTime = System.currentTimeMillis();
+    axisTime = currentTime; // 기준시간을 현재시간으로 설정
+    } else {
+      currentTime = System.currentTimeMillis();
+      between = (currentTime - axisTime) / 1000; // 1000밀리세컨드 = 1초. 즉, 1000으로 나누어주면 초가 됨.
+
+      timeView.setText("경과시간 : " + between + " 초");
+  }
+</code></pre>
+
 ## Screenshots
 ***기능1***
 
