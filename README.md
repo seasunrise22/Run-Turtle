@@ -26,7 +26,7 @@
 - DB : MySQL, phpMyAdmin
 
 ## Code Preview
-***GPS로 현재 위치 측정하기***
+***GPS를 이용한 현재 위치 측정***
 <pre><code>
 // LocationManager 호출
 private void startLocationService() {
@@ -42,16 +42,12 @@ private void startLocationService() {
       minTime,
       minDistance,
       mGPSListener);
-  } catch(SecurityException ex) {
-    ex.printStackTrace();
   }
-}
 ...
 
 // 위치 관리자가 쏜 현재 위치를 받을 GPS 리스너(LocationListener)
 private class GPSListener implements LocationListener {
-  ...
- 
+  ... 
  /**
   * 위치 정보가 확인되었을 때 호출되는 메소드
   */
@@ -66,7 +62,7 @@ private class GPSListener implements LocationListener {
       ...
 </code></pre>
 
-***속도, 이동거리, 이동시간 구하기***
+***속도, 이동거리, 이동시간 측정***
 <pre><code>
 // 현재속도, 최대속도 구하기
 if(location != null) {
@@ -74,9 +70,7 @@ if(location != null) {
   if (currentSpeed > maxSpeed) {
       maxSpeed = currentSpeed;
   }
-  String strMaxSpeed = String.format("%.2f", maxSpeed);
-  String strMinSpeed = String.format("%.2f", currentSpeed);
-  speedView.setText("최대속도 : " + strMaxSpeed + " m/s" + "\n현재속도 : " + strMinSpeed + " m/s");
+  ...
 }
 
 // 누적 이동거리 구하기
@@ -86,10 +80,8 @@ if(lastLocation == null) {
     // distanceTo = Returns the approximate distance in meters between this location and the given location.
     distance = distance + lastLocation.distanceTo(location); 
     lastLocation = location; // 새롭게 갱신 된 최근 위치를 다시 lastLocation 변수에 저장
-    String strDistance = String.format("%.2f", distance); // 소수점 둘째자리까지만 표시하도록
-
-    distanceView.setText("이동거리 : " + strDistance + " m");
-  }
+    ...
+    }
 
 // 이동한 시간 구하기
 if(axisTime == 0) {
@@ -98,9 +90,21 @@ if(axisTime == 0) {
     } else {
       currentTime = System.currentTimeMillis();
       between = (currentTime - axisTime) / 1000; // 1000밀리세컨드 = 1초. 즉, 1000으로 나누어주면 초가 됨.
-
-      timeView.setText("경과시간 : " + between + " 초");
+      ...
   }
+</code></pre>
+
+***Geocoder를 이용한 목적지 검색***
+<code><pre>
+private void searchLocation(String searchStr) {
+  List<Address> addressList = null; // 결과값이 들어갈 리스트 선언
+  try {
+      addressList = mGeocoder.getFromLocationName(searchStr, 3); // 동명주소 3개
+      Address firstAddr = addressList.get(0);
+      final Double addrLatitude = firstAddr.getLatitude();
+      final Double addrLongitude = firstAddr.getLongitude();
+      ...
+    }
 </code></pre>
 
 ## Screenshots
