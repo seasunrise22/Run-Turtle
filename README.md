@@ -94,17 +94,18 @@ if(axisTime == 0) {
 </code></pre>
 
 ***Geocoder를 이용한 목적지 검색***
-<code><pre>
+```JAVA
 private void searchLocation(String searchStr) {
-  List<Address> addressList = null; // 결과값이 들어갈 리스트 선언
-  try {
-      addressList = mGeocoder.getFromLocationName(searchStr, 3); // 동명주소 3개
-      Address firstAddr = addressList.get(0);
-      final Double addrLatitude = firstAddr.getLatitude();
-      final Double addrLongitude = firstAddr.getLongitude();
-      ...
+    List<Address> addressList = null; // 결과값이 들어갈 리스트 선언
+    try {
+        addressList = mGeocoder.getFromLocationName(searchStr, 3); // 동명주소 3개
+        Address firstAddr = addressList.get(0);
+        final Double addrLatitude = firstAddr.getLatitude();
+        final Double addrLongitude = firstAddr.getLongitude();
+        ...
     }
-</code></pre>
+}
+```
   
 ***php를 매개로 MySQL과 JSON 형식으로 통신***
 <code><pre>
