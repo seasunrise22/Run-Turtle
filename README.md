@@ -62,7 +62,7 @@ private class GPSListener implements LocationListener {
       ...
 </code></pre>
 
-***속도, 이동거리, 이동시간 측정***
+**속도, 이동거리, 이동시간 측정**
 <pre><code>
 // 현재속도, 최대속도 구하기
 if(location != null) {
