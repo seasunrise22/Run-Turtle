@@ -27,7 +27,8 @@
 
 ## Code Preview
 ***GPS를 이용한 현재 위치 측정***
-<pre><code>// LocationManager 호출
+```JAVA
+// LocationManager 호출
 private void startLocationService() {
   mGPSListener = new GPSListener(); // 리스너 객체 생성
   long minTime = 1000; // 1초에 한번씩 위치정보 받는다.
@@ -59,10 +60,10 @@ private class GPSListener implements LocationListener {
       // 지도에 현재위치를 찍기 위한 메소드에 위도, 경도값을 넘겨주면서 호출
       showCurrentLocation(latitude, longitude);
       ...
-</code></pre>
+```
 
 ***속도, 이동거리, 이동시간 측정***
-<pre><code>
+```JAVA
 // 현재속도, 최대속도 구하기
 if(location != null) {
   currentSpeed = location.getSpeed();
@@ -91,7 +92,7 @@ if(axisTime == 0) {
       between = (currentTime - axisTime) / 1000; // 1000밀리세컨드 = 1초. 즉, 1000으로 나누어주면 초가 됨.
       ...
   }
-</code></pre>
+```
 
 ***Geocoder를 이용한 목적지 검색***
 ```JAVA
@@ -108,7 +109,7 @@ private void searchLocation(String searchStr) {
 ```
   
 ***php를 매개로 MySQL과 JSON 형식으로 통신***
-<code><pre>
+```JAVA
 Response.Listener<String> responseListener = new Response.Listener<String>() {
 
 @Override
@@ -137,7 +138,7 @@ public class AddressRequest extends StringRequest {
         return params;
     }
 }
-</code></pre>
+```
 
 ## Screenshots
 ***기능1***
