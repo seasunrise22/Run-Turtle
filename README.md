@@ -28,6 +28,7 @@
 ## Code Preview
 ***GPS로 현재 위치 측정하기***
 <pre><code>
+// LocationManager 호출
 private void startLocationService() {
   mGPSListener = new GPSListener(); // 리스너 객체 생성
   long minTime = 1000; // 1초에 한번씩 위치정보 받는다.
