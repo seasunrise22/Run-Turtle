@@ -92,8 +92,8 @@ if(axisTime == 0) {
   }
 </code></pre>
 
-***Geocoder를 이용한 목적지 검색***
-<code><pre>private void searchLocation(String searchStr) {
+***Geocoder를 이용한 목적지 검색***<code><pre>
+private void searchLocation(String searchStr) {
   List<Address> addressList = null; // 결과값이 들어갈 리스트 선언
   try {
       addressList = mGeocoder.getFromLocationName(searchStr, 3); // 동명주소 3개
