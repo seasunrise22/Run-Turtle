@@ -27,8 +27,7 @@
 
 ## Code Preview
 ***GPS를 이용한 현재 위치 측정***
-<pre><code>
-// LocationManager 호출
+<pre><code>// LocationManager 호출
 private void startLocationService() {
   mGPSListener = new GPSListener(); // 리스너 객체 생성
   long minTime = 1000; // 1초에 한번씩 위치정보 받는다.
@@ -62,9 +61,8 @@ private class GPSListener implements LocationListener {
       ...
 </code></pre>
 
-**속도, 이동거리, 이동시간 측정**
-<pre><code>
-// 현재속도, 최대속도 구하기
+***속도, 이동거리, 이동시간 측정***
+<pre><code>// 현재속도, 최대속도 구하기
 if(location != null) {
   currentSpeed = location.getSpeed();
   if (currentSpeed > maxSpeed) {
