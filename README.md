@@ -62,7 +62,8 @@ private class GPSListener implements LocationListener {
 </code></pre>
 
 ***속도, 이동거리, 이동시간 측정***
-<pre><code>// 현재속도, 최대속도 구하기
+<pre><code>
+// 현재속도, 최대속도 구하기
 if(location != null) {
   currentSpeed = location.getSpeed();
   if (currentSpeed > maxSpeed) {
@@ -92,7 +93,8 @@ if(axisTime == 0) {
   }
 </code></pre>
 
-***Geocoder를 이용한 목적지 검색***<code><pre>
+***Geocoder를 이용한 목적지 검색***
+<code><pre>
 private void searchLocation(String searchStr) {
   List<Address> addressList = null; // 결과값이 들어갈 리스트 선언
   try {
