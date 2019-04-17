@@ -106,6 +106,22 @@ private void searchLocation(String searchStr) {
       ...
     }
 </code></pre>
+  
+*** php를 매개로 MySQL과 JSON 형식으로 통신 ***
+<code><pre>
+Response.Listener<String> responseListener = new Response.Listener<String>() {
+
+@Override
+public void onResponse(String response) {
+      try {
+        JSONObject jsonResponse = new JSONObject(response);
+        boolean success = jsonResponse.getBoolean("success");
+        if(success) {
+        ...
+        }
+        
+AddressRequest addressRequest = new AddressRequest(searchStr, responseListener);
+</code></pre>
 
 ## Screenshots
 ***기능1***
