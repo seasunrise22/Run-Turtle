@@ -26,8 +26,43 @@
 - DB : MySQL, phpMyAdmin
 
 ## Code Preview
-***Sample***
+***GPS로 현재 위치 측정하기***
 <pre><code>
+private void startLocationService() {
+  mGPSListener = new GPSListener(); // 리스너 객체 생성
+  long minTime = 1000; // 1초에 한번씩 위치정보 받는다.
+  float minDistance = 0;
+
+  // 위치요청
+  try {
+    // GPS 기반 위치 요청
+    mLocationManager.requestLocationUpdates(
+      LocationManager.GPS_PROVIDER,
+      minTime,
+      minDistance,
+      mGPSListener);
+  } catch(SecurityException ex) {
+    ex.printStackTrace();
+  }
+}
+...
+
+// 위치 관리자가 쏜 현재 위치를 받을 GPS 리스너(LocationListener)
+private class GPSListener implements LocationListener {
+  ...
+ 
+ /**
+  * 위치 정보가 확인되었을 때 호출되는 메소드
+  */
+   @Override
+   public void onLocationChanged(Location location) {
+      // getLatitude와 getLongitude를 이용해 현재위치의 위도와 경도값을 받아와 변수에 저장.
+      Double latitude = location.getLatitude();
+      Double longitude = location.getLongitude();
+
+      // 지도에 현재위치를 찍기 위한 메소드에 위도, 경도값을 넘겨주면서 호출
+      showCurrentLocation(latitude, longitude);
+      ...
 </code></pre>
 
 ## Screenshots
