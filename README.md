@@ -25,6 +25,11 @@
 - Server : Apache Tomcat 
 - DB : MySQL, phpMyAdmin
 
+## Code Preview
+***Sample***
+<pre><code>
+</code></pre>
+
 ## Screenshots
 ***기능1***
 
